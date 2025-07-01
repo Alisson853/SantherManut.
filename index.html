@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Histórico de Manutenções - Santher</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <img src="C:\Users\alisson.barbosa\Desktop\Manutenções Santher\santher-logo1.png"alt="Logo Santher" class="logo" />
+    <h1>Histórico de Manutenções</h1>
+  </header>
+
+  <main>
+    <section class="add-form">
+      <h2>Adicionar Nova Manutenção</h2>
+      <form id="manutForm">
+        <input type="text" id="painel" placeholder="Nome do Painel" required />
+        <textarea id="descricao" placeholder="O que foi feito?" required></textarea>
+        <button type="submit">Salvar</button>
+      </form>
+    </section>
+
+    <section class="historico">
+      <h2>Registros</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Painel</th>
+            <th>Descrição</th>
+            <th>Data</th>
+          </tr>
+        </thead>
+        <tbody id="listaManutencoes">
+          <!-- Conteúdo será inserido via JS -->
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer>
+    <p>Santher © 2025</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
